@@ -13,14 +13,16 @@
                 <button 
                     type="button"
                     id="registerBtn"
-                    class="btn btn-info">
-                    Register</button> 
+                    class="btn btn-info"
+                    (click)="goToUserRegister()"
+                    >Register</button> 
             </div>
             <div class="buttons">
                 <button 
                     type="button" 
                     id="loginBtn"
                     class="btn btn-outline-info"
+                    (click)="goToUserLogin()"
                     >Login as Member</button>
             </div>
             <div class="buttons">
@@ -28,6 +30,7 @@
                     type="button" 
                     id="adminBtn"
                     class="btn btn-outline-info"
+                    (click)="goToAdminLogin()"
                     >Login as Admin</button>
             </div>
         </div>
