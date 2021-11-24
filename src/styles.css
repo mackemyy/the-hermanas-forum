@@ -13,3 +13,7 @@
     font-family: "Montserrat";
     src: local("Montserrat"), url(./assets/fonts/Montserrat-Bold.ttf) format("truetype");
 }
+
+body, html {
+    height: 100%;
+}
