@@ -1,9 +1,18 @@
 .centered {
-    height: 50px;
-    width: 50px;
+    height: 550px;
+    width: 550px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#login {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    color: rgb(23, 162, 184);
 }
