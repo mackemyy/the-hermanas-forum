@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserWelcomeComponent } from './user-welcome/user-welcome.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,8 @@ import { UserLoginComponent } from './user-login/user-login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
   ],
   providers: [],

@@ -2,10 +2,57 @@
     <div id="bg">
         <img src="assets\images\tile_background.png" alt="">
             <div class="centered">
-                <div id="login">  
+                <div id="login" >  
                     LOGIN<hr>
                 </div>
-               
+                    <form (ngSubmit) = "onLogin()" #f="ngForm">
+                        <div id="loginSec" ngModelGroup="loginSec" #loginSec="ngModelGroup">
+                            <div class="form-group">
+                                <label for="email" class="label">Email</label> <br>
+                                <input 
+                                    type="text"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                    ngModel name = "email"
+                                    #email = "ngModel"
+                                    required
+                                    email
+                                />
+                            </div>
+                            <div *ngIf="!email.valid && email.touched" class="help-block">Please input a VALID email address.</div>
+                            <div class="form-group">
+                                <label for="password" class="label">Password</label> <br>
+                                <input 
+                                    type="text"
+                                    id="pword"
+                                    class="form-control"
+                                    placeholder="Your password"
+                                    ngModel name = "password"
+                                    required
+                                    #password = "ngModel"
+                                />
+                                <div *ngIf="!password.valid && password.touched" class="help-block">Please input your correct password.</div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button 
+                                type="button"
+                                id="registerBtn"
+                                class="btn btn-info">
+                                Login</button> 
+                        </div><hr>
+                        <div class="createAcc">
+                            <p>New to The Hermanas Forum?</p>
+                            <button 
+                                type="button" 
+                                id="create"
+                                class="btn btn-success"
+                                (onClick)="goToUserRegister()">
+                                Create Account</button>
+
+                        </div>
+                    </form>
             </div>
     </div>
 </body>
