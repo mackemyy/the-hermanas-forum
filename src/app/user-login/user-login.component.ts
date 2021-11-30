@@ -33,6 +33,9 @@ export class UserLoginComponent implements OnInit {
   goToUserRegister= () => {
     this.router.navigateByUrl('/user-register');
   }
+  goToHomePage= () => {
+    this.router.navigateByUrl('/home');
+  }
 
   ngOnInit(): void {
   }

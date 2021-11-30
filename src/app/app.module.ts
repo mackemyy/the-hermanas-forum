@@ -5,22 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserWelcomeComponent } from './user-welcome/user-welcome.component';
-<<<<<<< HEAD
 import { UserLoginComponent } from './user-login/user-login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-=======
-import { UserRegisterComponent } from './user-register/user-register.component';
->>>>>>> Salazar-User-Register
+import { UserHomeComponent } from './user-home/user-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserWelcomeComponent,
-<<<<<<< HEAD
     UserLoginComponent,
-=======
-    UserRegisterComponent
->>>>>>> Salazar-User-Register
+    UserHomeComponent,
   ],
   imports: [
     BrowserModule,
